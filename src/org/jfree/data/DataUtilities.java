@@ -183,9 +183,12 @@ public abstract class DataUtilities {
         double total = 0.0;
         for (int i = 0; i < data.getItemCount(); i++) {
             Number v = data.getValue(i);
-            if (v != null) {
-                total = total + v.doubleValue();
+            
+            if (v == null) {
+            	throw new InvalidParameterException("null number in data");
             }
+            total = total + v.doubleValue();
+
         }
         if(total==0&&data.getItemCount()!=0) {
         	throw new InvalidParameterException("total sum is 0");
@@ -197,7 +200,11 @@ public abstract class DataUtilities {
             if (v != null) {
                 runningTotal = runningTotal + v.doubleValue();
             }
-            result.addValue(data.getKey(i), new Double(runningTotal / total));
+            double inputValue=runningTotal/total;
+            if(inputValue>1) {
+            	throw new InvalidParameterException("a cumulative percentage is greater than 1");
+            }
+            result.addValue(data.getKey(i), new Double(inputValue));
         }
         return result;
     }
