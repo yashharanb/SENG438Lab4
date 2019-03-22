@@ -60,6 +60,7 @@
 package org.jfree.data;
 
 import java.io.Serializable;
+import java.security.InvalidParameterException;
 
 /**
  * Represents an immutable range of values.
@@ -152,6 +153,9 @@ public strictfp class Range implements Serializable {
         if (lower <= this.lower) {
             return (upper > this.lower);
         }
+        else if(lower<=this.upper) {
+        	return (upper>=lower);
+        }
         else {
             return (upper < this.upper && upper >= lower);
         }
@@ -168,6 +172,9 @@ public strictfp class Range implements Serializable {
      */
     public double constrain(double value) {
         double result = value;
+        if (Double.isNaN(value)==true) {
+            throw new InvalidParameterException("Value is not a number.");   
+        }
         if (!contains(value)) {
             if (value > this.upper) {
                 result = this.upper;   
@@ -254,7 +261,7 @@ public strictfp class Range implements Serializable {
     public static Range expand(Range range, 
                                double lowerMargin, double upperMargin) {
         if (range == null) {
-            throw new IllegalArgumentException("Null 'range' argument.");   
+            throw new InvalidParameterException("Null 'range' argument.");   
         }
         double length = range.getLength();
         double lower = length * lowerMargin;
@@ -276,6 +283,11 @@ public strictfp class Range implements Serializable {
      * @return A range representing the base range shifted right by delta.
      */
     public static Range shift(Range base, double delta) {
+    	if(base == null)
+    	{
+    	     throw new InvalidParameterException("Null 'range' argument.");   
+        
+    	}
         return shift(base, delta, false);
     }
     

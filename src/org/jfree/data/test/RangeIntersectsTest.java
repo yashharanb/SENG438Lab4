@@ -84,7 +84,7 @@ public class RangeIntersectsTest {
 	@Test
 	public void lowerBelowAndUpperAbove() {
 		
-		boolean result = example.intersects(4, 4);
+		boolean result = example.intersects(-4, 4);
 		
 		assertTrue("falsely thought did not intersect.", result);
 	}
