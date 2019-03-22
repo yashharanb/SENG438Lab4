@@ -19,7 +19,7 @@ private Range exampleRange;
 	public void getCentralValueOfValidRange() {
 		double actual = exampleRange.getCentralValue();
 		double expected = 0;
-		assertEquals("When range is valid and calculating the central value",expected, actual);
+		assertEquals("When range is valid and calculating the central value",expected, actual,0.0000001d);
 	}
 
 }
