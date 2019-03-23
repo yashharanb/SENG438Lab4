@@ -88,17 +88,7 @@ public class RangeIntersectsTest {
 		
 		assertTrue("falsely thought did not intersect.", result);
 	}
-//	/**
-//	 * tests that when the lower input is greater than the higher input, 
-//	 * an invalidParameterException is thrown.
-//	 */
-//	@Test (expected = InvalidParameterException.class)
-//	public void lowerIsGreaterThanHigher() {
-//		
-//		boolean result = example.intersects(4, 3);
-//				
-//	}
-//	
+
 	/**
 	 * tests that when the lower input is greater than the range, and the
 	 * upper input is within than the range, it does not intersect
@@ -118,6 +108,4 @@ public class RangeIntersectsTest {
 		assertFalse("falsely thought intersected.", result);
 		
 	}
-	
-
 }

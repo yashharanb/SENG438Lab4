@@ -157,7 +157,7 @@ public strictfp class Range implements Serializable {
         	return (upper>=lower);
         }
         else {
-            return (upper < this.upper && upper >= lower);
+            return false;
         }
     }
 
