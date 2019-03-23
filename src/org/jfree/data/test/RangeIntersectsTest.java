@@ -112,5 +112,12 @@ public class RangeIntersectsTest {
 		
 	}
 	
+	@Test
+	public void lowerWithinAndUpperBelow() {
+		boolean result = example.intersects(0, -4);
+		assertFalse("falsely thought intersected.", result);
+		
+	}
+	
 
 }
