@@ -200,7 +200,10 @@ public abstract class DataUtilities {
            double runningTotal = 0.0;
            for (int i = 0; i < data.getItemCount(); i++) {
                Number v = data.getValue(i);
-               if (v != null) {
+               if(v== null) {
+            	   throw new InvalidParameterException("null number");
+               }
+               else {
                    runningTotal = runningTotal + v.doubleValue();
                }
                double inputValue=runningTotal/total;

@@ -14,6 +14,7 @@ import org.junit.runners.Suite;
 	DataUtilitiesCreateNumberArrayTest.class,
 	DataUtilitiesGetCumulativePercentagesTest.class,
 	DataUtilitiesTestCreate2DArray.class,
+	RangeConstructorTest.class,
 	RangeConstrainTest.class,
 	RangeContainsTest.class,
 	RangeExpandTest.class,
