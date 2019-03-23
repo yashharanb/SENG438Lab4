@@ -166,4 +166,13 @@ public void outOfCumulativeRange() {
 	KeyedValues output= getCumulativePercentages(mock);
 }
 
+@Test(expected = InvalidParameterException.class)
+public void nullNumber() {
+	List<String> keys= Arrays.asList("key0","key1");
+	List<Double> doubleValues=Arrays.asList(2.0,null);
+	
+	KeyedValues mock=createMockery(keys, doubleValues);
+	KeyedValues output= getCumulativePercentages(mock);
+}
+
 }

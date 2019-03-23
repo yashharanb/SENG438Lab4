@@ -68,5 +68,4 @@ public class RangeShiftWithZeroCrossingTest {
 		Range expected = new Range(-3,-2);
 		assertEquals("Negative delta crossing zero for both bounds: ", expected, actual);
 	}
-
 }

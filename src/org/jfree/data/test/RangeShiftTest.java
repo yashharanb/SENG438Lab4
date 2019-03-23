@@ -85,4 +85,27 @@ public class RangeShiftTest {
 		Range expected = new Range(0, 0);
 		assertEquals("Negative delta crossing zero for both bounds: ", expected, actual);
 	}
+	
+	/**
+	 * Tests a negative delta that results in both bounds of the Range object
+	 * crossing 0
+	 */
+	@Test
+	public void negativeDeltaCrossingBothBoundsWithDecimal() {
+		Range actual = Range.shift(new Range(0.5, 1.5), -2);
+		Range expected = new Range(0, 0);
+		assertEquals("Negative delta crossing zero for both bounds: ", expected, actual);
+	}
+	
+	/**
+	 * Tests a negative delta that results in both bounds of the Range object
+	 * crossing 0
+	 */
+	@Test
+	public void negativeDeltaWhenOnBoundry() {
+		Range actual = Range.shift(new Range(0, 1.5), -2);
+		Range expected = new Range(-2, 0);
+		assertEquals("Negative delta crossing zero for both bounds: ", expected, actual);
+	}
+	
 }
