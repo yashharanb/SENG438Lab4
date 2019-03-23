@@ -30,7 +30,7 @@ private Range example;
 	}
 	
 	@Test
-	public void valeAboveRange() {
+	public void valueAboveRange() {
 		Range actual = Range.expandToInclude(example, 5);
 		Range expected = new Range(-2,5);
 		assertEquals("When the value is above the range", expected, actual);

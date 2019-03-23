@@ -128,7 +128,6 @@ public void fullValues() {
 			double expected=fullKeyedExpectedValues.get(i);
 			double actual=output.getValue(keyTested).doubleValue();
 			assertEquals("Outputed percentages are inaccurate", expected,actual,.000000001d);
-			System.out.println(actual);
 		}
 	}
 

@@ -27,5 +27,12 @@ public class RangeCombineTest {
 		Range expected = new Range(-5,5);
 		assertEquals("When range one is bigger than range two", expected, actual);
 	}
+	
+	@Test
+	public void rangesIntersect() {
+		Range actual = Range.combine(new Range(-3,3), new Range(1,5));
+		Range expected = new Range(-3,5);
+		assertEquals("When ranges one and two intersect", expected, actual);
+	}
 
 }
