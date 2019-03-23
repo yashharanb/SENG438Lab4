@@ -200,12 +200,7 @@ public abstract class DataUtilities {
            double runningTotal = 0.0;
            for (int i = 0; i < data.getItemCount(); i++) {
                Number v = data.getValue(i);
-               if(v== null) {
-            	   throw new InvalidParameterException("null number");
-               }
-               else {
-                   runningTotal = runningTotal + v.doubleValue();
-               }
+               runningTotal = runningTotal + v.doubleValue();
                double inputValue=runningTotal/total;
                if(inputValue>1) {
                	throw new InvalidParameterException("a cumulative percentage is greater than 1");
