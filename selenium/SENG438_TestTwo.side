@@ -1,0 +1,801 @@
+{
+  "id": "9c3e8224-a597-4456-a490-3602f894d21c",
+  "version": "2.0",
+  "name": "SENG438_TestTwo",
+  "url": "https://www.ikea.com",
+  "tests": [{
+    "id": "212289ef-c2f5-46f4-a3d4-63a3afac6d3d",
+    "name": "ShoppingCart",
+    "commands": [{
+      "id": "8107419b-58fc-4f88-a169-8e2c21f9c84a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eea3f6e5-849b-44e8-9e54-e21b2e53ec5b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f6b47c1-1224-426c-b6f4-73f3a53c34ec",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Take me to IKEA Canada (English)",
+      "targets": [
+        ["linkText=Take me to IKEA Canada (English)", "linkText"],
+        ["css=.gateway-header__cta:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Take me to IKEA Canada (English)')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.ikea.com/ca/en/')]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Take me to IKEA Canada (English)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d514faa-25ec-482c-9a9e-d61b62dda19a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#cart > #imgIKEALogoHeader",
+      "targets": [
+        ["css=#cart > #imgIKEALogoHeader", "css:finder"],
+        ["xpath=//img[contains(@src,'https://ww8.ikea.com/ext/iplugins/en_CA/development/plugins/navigation/images/cart-icon.png')]", "xpath:img"],
+        ["xpath=(//img[@id='imgIKEALogoHeader'])[2]", "xpath:attributes"],
+        ["xpath=//a[@id='cart']/img", "xpath:idRelative"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d008242-660f-4ea7-b997-41fb7b8f137e",
+      "comment": "",
+      "command": "click",
+      "target": "id=expandAddByArticleNumber",
+      "targets": [
+        ["id=expandAddByArticleNumber", "id"],
+        ["linkText=Add a product by 8-digit article number", "linkText"],
+        ["css=#expandAddByArticleNumber", "css:finder"],
+        ["xpath=//a[contains(text(),'Add a product by 8-digit article number')]", "xpath:link"],
+        ["xpath=//a[@id='expandAddByArticleNumber']", "xpath:attributes"],
+        ["xpath=//form[@id='ArticleAddForm']/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[9]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "feab8a8a-32c6-4266-ab13-761a97f53003",
+      "comment": "",
+      "command": "click",
+      "target": "id=partNumber",
+      "targets": [
+        ["id=partNumber", "id"],
+        ["name=partNumber", "name"],
+        ["css=#partNumber", "css:finder"],
+        ["xpath=//input[@id='partNumber']", "xpath:attributes"],
+        ["xpath=//div[@id='addProduct_partNumberField']/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9843f519-9555-4123-b47a-553312a95203",
+      "comment": "",
+      "command": "type",
+      "target": "id=partNumber",
+      "targets": [
+        ["id=partNumber", "id"],
+        ["name=partNumber", "name"],
+        ["css=#partNumber", "css:finder"],
+        ["xpath=//input[@id='partNumber']", "xpath:attributes"],
+        ["xpath=//div[@id='addProduct_partNumberField']/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "001.033.43"
+    }, {
+      "id": "70212a68-a519-4e7a-bbaa-044a1756d3dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js_Button_OI_AddProductBox input",
+      "targets": [
+        ["css=#js_Button_OI_AddProductBox input", "css:finder"],
+        ["xpath=//input[@value='Add']", "xpath:attributes"],
+        ["xpath=//a[@id='js_Button_OI_AddProductBox']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54b7cc8d-63f2-4a6b-97ba-c6da7840b0e2",
+      "comment": "",
+      "command": "click",
+      "target": "id=quantity_1",
+      "targets": [
+        ["id=quantity_1", "id"],
+        ["name=quantity_1", "name"],
+        ["css=#quantity_1", "css:finder"],
+        ["xpath=//input[@id='quantity_1']", "xpath:attributes"],
+        ["xpath=//div[@id='tr_1']/div/div/input", "xpath:idRelative"],
+        ["xpath=//form[2]/div/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f412d86-9e5b-4758-abd2-fa6a6412774a",
+      "comment": "",
+      "command": "type",
+      "target": "id=quantity_1",
+      "targets": [
+        ["id=quantity_1", "id"],
+        ["name=quantity_1", "name"],
+        ["css=#quantity_1", "css:finder"],
+        ["xpath=//input[@id='quantity_1']", "xpath:attributes"],
+        ["xpath=//div[@id='tr_1']/div/div/input", "xpath:idRelative"],
+        ["xpath=//form[2]/div/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Y"
+    }, {
+      "id": "fdb49cb3-af3e-45bf-a46d-e7eab89b400e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#quantityUpdateLink_1 input",
+      "targets": [
+        ["css=#quantityUpdateLink_1 input", "css:finder"],
+        ["xpath=//input[@value='Update']", "xpath:attributes"],
+        ["xpath=//a[@id='quantityUpdateLink_1']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form[2]/div/div/div/div/div[2]/div/a/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59abfa74-c7ad-44ca-a55a-eadf29b4be19",
+      "comment": "",
+      "command": "//assertAlert",
+      "target": "Please enter a number between 0 and 1000 for quantity\n",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ac63d73-1105-46c1-9701-7b425cb2126f",
+      "comment": "",
+      "command": "click",
+      "target": "id=quantity_1",
+      "targets": [
+        ["id=quantity_1", "id"],
+        ["name=quantity_1", "name"],
+        ["css=#quantity_1", "css:finder"],
+        ["xpath=//input[@id='quantity_1']", "xpath:attributes"],
+        ["xpath=//div[@id='tr_1']/div/div/input", "xpath:idRelative"],
+        ["xpath=//form[2]/div/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "122ae31d-81eb-4bf2-8838-051d54f614e5",
+      "comment": "",
+      "command": "type",
+      "target": "id=quantity_1",
+      "targets": [
+        ["id=quantity_1", "id"],
+        ["name=quantity_1", "name"],
+        ["css=#quantity_1", "css:finder"],
+        ["xpath=//input[@id='quantity_1']", "xpath:attributes"],
+        ["xpath=//div[@id='tr_1']/div/div/input", "xpath:idRelative"],
+        ["xpath=//form[2]/div/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "8dbef8f1-4fa5-4653-b81d-912dc26cd017",
+      "comment": "",
+      "command": "click",
+      "target": "css=#quantityUpdateLink_1 input",
+      "targets": [
+        ["css=#quantityUpdateLink_1 input", "css:finder"],
+        ["xpath=//input[@value='Update']", "xpath:attributes"],
+        ["xpath=//a[@id='quantityUpdateLink_1']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form[2]/div/div/div/div/div[2]/div/a/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2835f90c-d572-4441-98c4-ea81ac1e00bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=quantity_1",
+      "targets": [
+        ["id=quantity_1", "id"],
+        ["name=quantity_1", "name"],
+        ["css=#quantity_1", "css:finder"],
+        ["xpath=//input[@id='quantity_1']", "xpath:attributes"],
+        ["xpath=//div[@id='tr_1']/div/div/input", "xpath:idRelative"],
+        ["xpath=//form[2]/div/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61acb601-1438-43d4-a4f1-6541d3195c4c",
+      "comment": "",
+      "command": "type",
+      "target": "id=quantity_1",
+      "targets": [
+        ["id=quantity_1", "id"],
+        ["name=quantity_1", "name"],
+        ["css=#quantity_1", "css:finder"],
+        ["xpath=//input[@id='quantity_1']", "xpath:attributes"],
+        ["xpath=//div[@id='tr_1']/div/div/input", "xpath:idRelative"],
+        ["xpath=//form[2]/div/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "3216b7a5-7307-4708-8ee1-ebce54ddbaa5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#quantityUpdateLink_1 input",
+      "targets": [
+        ["css=#quantityUpdateLink_1 input", "css:finder"],
+        ["xpath=//input[@value='Update']", "xpath:attributes"],
+        ["xpath=//a[@id='quantityUpdateLink_1']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form[2]/div/div/div/div/div[2]/div/a/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f705ce7-63c7-486a-b071-02188077a5cd",
+      "comment": "",
+      "command": "click",
+      "target": "id=expandAddByArticleNumber",
+      "targets": [
+        ["id=expandAddByArticleNumber", "id"],
+        ["linkText=Add a product by 8-digit article number", "linkText"],
+        ["css=#expandAddByArticleNumber", "css:finder"],
+        ["xpath=//a[contains(text(),'Add a product by 8-digit article number')]", "xpath:link"],
+        ["xpath=//a[@id='expandAddByArticleNumber']", "xpath:attributes"],
+        ["xpath=//form[@id='ArticleAddForm']/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[9]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19bb35e1-b692-464a-995a-a496277c55a6",
+      "comment": "",
+      "command": "click",
+      "target": "id=partNumber",
+      "targets": [
+        ["id=partNumber", "id"],
+        ["name=partNumber", "name"],
+        ["css=#partNumber", "css:finder"],
+        ["xpath=//input[@id='partNumber']", "xpath:attributes"],
+        ["xpath=//div[@id='addProduct_partNumberField']/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a6e46b3-0865-40c8-a3d7-69db95fb89cc",
+      "comment": "",
+      "command": "type",
+      "target": "id=partNumber",
+      "targets": [
+        ["id=partNumber", "id"],
+        ["name=partNumber", "name"],
+        ["css=#partNumber", "css:finder"],
+        ["xpath=//input[@id='partNumber']", "xpath:attributes"],
+        ["xpath=//div[@id='addProduct_partNumberField']/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "00cb1ba7-84a8-4c39-8dc5-94774cc1d3fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js_Button_OI_AddProductBox input",
+      "targets": [
+        ["css=#js_Button_OI_AddProductBox input", "css:finder"],
+        ["xpath=//input[@value='Add']", "xpath:attributes"],
+        ["xpath=//a[@id='js_Button_OI_AddProductBox']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45290deb-eb09-4cd1-bd5f-24502dfaa5d6",
+      "comment": "",
+      "command": "click",
+      "target": "id=addProductField",
+      "targets": [
+        ["id=addProductField", "id"],
+        ["css=#addProductField", "css:finder"],
+        ["xpath=//div[@id='addProductField']", "xpath:attributes"],
+        ["xpath=//form[@id='ArticleAddForm']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f72bf6c1-a23d-4607-aba7-fcd616141323",
+      "comment": "",
+      "command": "click",
+      "target": "id=partNumber",
+      "targets": [
+        ["id=partNumber", "id"],
+        ["name=partNumber", "name"],
+        ["css=#partNumber", "css:finder"],
+        ["xpath=//input[@id='partNumber']", "xpath:attributes"],
+        ["xpath=//div[@id='addProduct_partNumberField']/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a40aea6-66c0-474d-9dd5-253a8e4617e9",
+      "comment": "",
+      "command": "type",
+      "target": "id=partNumber",
+      "targets": [
+        ["id=partNumber", "id"],
+        ["name=partNumber", "name"],
+        ["css=#partNumber", "css:finder"],
+        ["xpath=//input[@id='partNumber']", "xpath:attributes"],
+        ["xpath=//div[@id='addProduct_partNumberField']/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "12345678"
+    }, {
+      "id": "cafaa017-2ee0-430d-95b3-6994d2c2a992",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js_Button_OI_AddProductBox input",
+      "targets": [
+        ["css=#js_Button_OI_AddProductBox input", "css:finder"],
+        ["xpath=//input[@value='Add']", "xpath:attributes"],
+        ["xpath=//a[@id='js_Button_OI_AddProductBox']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2df7d86-1fdb-4721-ad2a-0f0876e72f9f",
+      "comment": "",
+      "command": "click",
+      "target": "id=addProductField",
+      "targets": [
+        ["id=addProductField", "id"],
+        ["css=#addProductField", "css:finder"],
+        ["xpath=//div[@id='addProductField']", "xpath:attributes"],
+        ["xpath=//form[@id='ArticleAddForm']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0935a6c-483b-410d-a7af-e1bbb4f3d46b",
+      "comment": "",
+      "command": "click",
+      "target": "id=partNumber",
+      "targets": [
+        ["id=partNumber", "id"],
+        ["name=partNumber", "name"],
+        ["css=#partNumber", "css:finder"],
+        ["xpath=//input[@id='partNumber']", "xpath:attributes"],
+        ["xpath=//div[@id='addProduct_partNumberField']/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64221a4d-ef1a-4ad0-a84f-6e4ad4592795",
+      "comment": "",
+      "command": "type",
+      "target": "id=partNumber",
+      "targets": [
+        ["id=partNumber", "id"],
+        ["name=partNumber", "name"],
+        ["css=#partNumber", "css:finder"],
+        ["xpath=//input[@id='partNumber']", "xpath:attributes"],
+        ["xpath=//div[@id='addProduct_partNumberField']/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "1234567891"
+    }, {
+      "id": "cc036d30-ee68-4ec5-89b9-bc25034153da",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js_Button_OI_AddProductBox input",
+      "targets": [
+        ["css=#js_Button_OI_AddProductBox input", "css:finder"],
+        ["xpath=//input[@value='Add']", "xpath:attributes"],
+        ["xpath=//a[@id='js_Button_OI_AddProductBox']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b8a377e-5f8b-4197-8f9e-b609a8e870f4",
+      "comment": "",
+      "command": "click",
+      "target": "id=addProductErrors",
+      "targets": [
+        ["id=addProductErrors", "id"],
+        ["css=#addProductErrors", "css:finder"],
+        ["xpath=//div[@id='addProductErrors']", "xpath:attributes"],
+        ["xpath=//div[@id='addProductField']/div[4]", "xpath:idRelative"],
+        ["xpath=//form/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f88c8729-e9bf-408f-a848-68d3dea736ea",
+      "comment": "",
+      "command": "click",
+      "target": "id=addProductField",
+      "targets": [
+        ["id=addProductField", "id"],
+        ["css=#addProductField", "css:finder"],
+        ["xpath=//div[@id='addProductField']", "xpath:attributes"],
+        ["xpath=//form[@id='ArticleAddForm']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e251a8b8-a1a0-4f11-bfda-2a7c1f2ae221",
+      "comment": "",
+      "command": "type",
+      "target": "id=partNumber",
+      "targets": [
+        ["id=partNumber", "id"],
+        ["name=partNumber", "name"],
+        ["css=#partNumber", "css:finder"],
+        ["xpath=//input[@id='partNumber']", "xpath:attributes"],
+        ["xpath=//div[@id='addProduct_partNumberField']/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "SENG438"
+    }, {
+      "id": "4123c1ff-f48d-4ab7-bb21-b2f9d8b20f19",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js_Button_OI_AddProductBox input",
+      "targets": [
+        ["css=#js_Button_OI_AddProductBox input", "css:finder"],
+        ["xpath=//input[@value='Add']", "xpath:attributes"],
+        ["xpath=//a[@id='js_Button_OI_AddProductBox']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44bcd1d7-d372-4cfc-95f4-dfe73300154d",
+      "comment": "",
+      "command": "click",
+      "target": "id=addProductField",
+      "targets": [
+        ["id=addProductField", "id"],
+        ["css=#addProductField", "css:finder"],
+        ["xpath=//div[@id='addProductField']", "xpath:attributes"],
+        ["xpath=//form[@id='ArticleAddForm']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "278e1797-b38d-4bb8-92dc-f5e59547f0d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.storesList",
+      "targets": [
+        ["css=.storesList", "css:finder"],
+        ["xpath=//div[@id='cartAddProductRow']/div[2]/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c0cfda1-9fa1-4b3a-bd29-5926faf99d70",
+      "comment": "",
+      "command": "select",
+      "target": "css=.storesList",
+      "targets": [],
+      "value": "label=IKEA Coquitlam - $10"
+    }, {
+      "id": "2c3f7dec-8594-4d1c-9ab4-64727444328d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.storesList",
+      "targets": [
+        ["css=.storesList", "css:finder"],
+        ["xpath=//div[@id='cartAddProductRow']/div[2]/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05a10bd5-cca5-47e0-9102-31a1ad5382c6",
+      "comment": "",
+      "command": "click",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//div[@id='cartAddProductRow']/div[2]/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Pay online and pick up your order from an IKEA store, a Pick up and order point or a Collection Point..')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f0ab0a1-b970-4a65-8c5e-2dd16311cead",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Start shopping!",
+      "targets": [
+        ["linkText=Start shopping!", "linkText"],
+        ["css=.emptyCartTxt > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Start shopping!')]", "xpath:link"],
+        ["xpath=//div[@id='emptyCartMsg']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ikea.com/ca/en/catalog/news/departments?filter=online&icid=en_CA-Cart-StartShopping')]", "xpath:href"],
+        ["xpath=//form[2]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Start shopping!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a04fea6b-420a-470e-b803-6fa7e2f37c90",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,11)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66b26b53-ef96-4ca0-9699-da201a58f081",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtDescrProduct1",
+      "targets": [
+        ["id=txtDescrProduct1", "id"],
+        ["css=.productContainerCategory #txtDescrProduct1", "css:finder"],
+        ["xpath=//span[@id='txtDescrProduct1']", "xpath:attributes"],
+        ["xpath=//div[@id='popupContent']/div/div/div/a/h2/div/span", "xpath:idRelative"],
+        ["xpath=//h2/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'kitchen island ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06dd0a6e-305a-4a55-97a7-8eed33203d1f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,210)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33d6fbe0-680a-4c10-841e-a89a838b6ce5",
+      "comment": "",
+      "command": "click",
+      "target": "id=jsButton_buyOnline_lnk",
+      "targets": [
+        ["id=jsButton_buyOnline_lnk", "id"],
+        ["css=#jsButton_buyOnline_lnk", "css:finder"],
+        ["xpath=//button[@id='jsButton_buyOnline_lnk']", "xpath:attributes"],
+        ["xpath=//div[@id='popupAddToCart20391658_P20391658']/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buy online')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a1cf344-cb64-49b8-ab92-c0a0c413c9a1",
+      "comment": "",
+      "command": "click",
+      "target": "id=slPopupH1",
+      "targets": [
+        ["id=slPopupH1", "id"],
+        ["css=#slPopupH1", "css:finder"],
+        ["xpath=//div[@id='slPopupH1']", "xpath:attributes"],
+        ["xpath=//div[@id='slPopup']/div[3]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28521612-3699-4d5a-be2f-b2ea8a88fe72",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=shopping cart",
+      "targets": [
+        ["linkText=shopping cart", "linkText"],
+        ["css=.shoppinglistStyle > .link", "css:finder"],
+        ["xpath=//a[contains(text(),'shopping cart')]", "xpath:link"],
+        ["xpath=//form[@id='formShoppingListPopup']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/webapp/wcs/stores/servlet/OrderItemDisplay?storeId=3&langId=-15&catalogId=11001&orderId=.&newLinks=true')]", "xpath:href"],
+        ["xpath=//div/div/div/form/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'shopping cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3065feb-7eb4-45b6-b9a9-fefb9d496562",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,14)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d37f9ac0-941b-4790-978a-1ec01959d36c",
+      "comment": "",
+      "command": "click",
+      "target": "id=deliveryCostCalculatorBottom",
+      "targets": [
+        ["id=deliveryCostCalculatorBottom", "id"],
+        ["css=#deliveryCostCalculatorBottom", "css:finder"],
+        ["xpath=//div[@id='deliveryCostCalculatorBottom']", "xpath:attributes"],
+        ["xpath=//div[@id='deliveryAllWrapBottom']/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36dca15d-de79-4142-909a-bd5f64f291b4",
+      "comment": "",
+      "command": "type",
+      "target": "id=zipCodeBottom",
+      "targets": [
+        ["id=zipCodeBottom", "id"],
+        ["name=zipCodeBottom", "name"],
+        ["css=#zipCodeBottom", "css:finder"],
+        ["xpath=//input[@id='zipCodeBottom']", "xpath:attributes"],
+        ["xpath=//div[@id='calcZipCodeBottom']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div[5]/input", "xpath:position"]
+      ],
+      "value": "SENG438"
+    }, {
+      "id": "d7276934-32cf-492e-8c70-808bce875bf3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#jsButton_calculateDelivery_Bottom input",
+      "targets": [
+        ["css=#jsButton_calculateDelivery_Bottom input", "css:finder"],
+        ["xpath=(//input[@value='Calculate'])[2]", "xpath:attributes"],
+        ["xpath=//a[@id='jsButton_calculateDelivery_Bottom']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div[6]/div/a/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "769e78b2-b4cc-4acb-a3d7-b88cd6af963e",
+      "comment": "",
+      "command": "click",
+      "target": "id=shippingCalculationBottom",
+      "targets": [
+        ["id=shippingCalculationBottom", "id"],
+        ["css=#shippingCalculationBottom", "css:finder"],
+        ["xpath=//form[@id='shippingCalculationBottom']", "xpath:attributes"],
+        ["xpath=//div[@id='deliveryCostCalculatorBottom']/form", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div/form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "277f4009-65ea-4dc5-9e0b-fc146092e34d",
+      "comment": "",
+      "command": "click",
+      "target": "id=zipCodeBottom",
+      "targets": [
+        ["id=zipCodeBottom", "id"],
+        ["name=zipCodeBottom", "name"],
+        ["css=#zipCodeBottom", "css:finder"],
+        ["xpath=//input[@id='zipCodeBottom']", "xpath:attributes"],
+        ["xpath=//div[@id='calcZipCodeBottom']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2649de9-bc95-4500-b820-1f7c69bc572c",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainPadding",
+      "targets": [
+        ["id=mainPadding", "id"],
+        ["css=#mainPadding", "css:finder"],
+        ["xpath=//div[@id='mainPadding']", "xpath:attributes"],
+        ["xpath=//div[@id='allContent']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98e1ac0f-fd2b-4d84-a650-b33cee87f717",
+      "comment": "",
+      "command": "click",
+      "target": "css=#jsButton_calculateDelivery_Bottom input",
+      "targets": [
+        ["css=#jsButton_calculateDelivery_Bottom input", "css:finder"],
+        ["xpath=(//input[@value='Calculate'])[2]", "xpath:attributes"],
+        ["xpath=//a[@id='jsButton_calculateDelivery_Bottom']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div[6]/div/a/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad257552-a7f4-4c74-9c3d-ccc4e00bc27b",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b6e664a-a14d-4d10-81ec-6be8ace50832",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dirright",
+      "targets": [
+        ["css=.dirright", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea129083-e767-49a3-90df-a843f7ecc019",
+      "comment": "",
+      "command": "click",
+      "target": "css=.chevron",
+      "targets": [
+        ["css=.chevron", "css:finder"],
+        ["xpath=//img[@alt='chevron']", "xpath:img"],
+        ["xpath=//div[@id='promotionsRow']/h2/button/img", "xpath:idRelative"],
+        ["xpath=//button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cd05389-8eca-433d-a8d3-0c80249a16bf",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,202)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "979806b5-78ec-46d4-ae5f-2a56bc5e48e5",
+      "comment": "",
+      "command": "click",
+      "target": "id=shoppingCartPromoForm_promoCode",
+      "targets": [
+        ["id=shoppingCartPromoForm_promoCode", "id"],
+        ["name=promoCode", "name"],
+        ["css=#shoppingCartPromoForm_promoCode", "css:finder"],
+        ["xpath=//input[@id='shoppingCartPromoForm_promoCode']", "xpath:attributes"],
+        ["xpath=//div[@id='promoForm']/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e24a4e18-1f52-48ec-9291-d19e26f81027",
+      "comment": "",
+      "command": "type",
+      "target": "id=shoppingCartPromoForm_promoCode",
+      "targets": [
+        ["id=shoppingCartPromoForm_promoCode", "id"],
+        ["name=promoCode", "name"],
+        ["css=#shoppingCartPromoForm_promoCode", "css:finder"],
+        ["xpath=//input[@id='shoppingCartPromoForm_promoCode']", "xpath:attributes"],
+        ["xpath=//div[@id='promoForm']/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/form/div/input", "xpath:position"]
+      ],
+      "value": "yesha"
+    }, {
+      "id": "a61a4149-c74c-4837-946a-2eeba5b5d5ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js_Button_OI_CalculatePromo input",
+      "targets": [
+        ["css=#js_Button_OI_CalculatePromo input", "css:finder"],
+        ["xpath=//input[@value='Apply']", "xpath:attributes"],
+        ["xpath=//a[@id='js_Button_OI_CalculatePromo']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/div/a/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6944e48e-a699-461d-8aa1-f344e1a53646",
+      "comment": "",
+      "command": "click",
+      "target": "id=promoForm",
+      "targets": [
+        ["id=promoForm", "id"],
+        ["css=#promoForm", "css:finder"],
+        ["xpath=//div[@id='promoForm']", "xpath:attributes"],
+        ["xpath=//form[@id='shoppingCartPromoForm']/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/div[4]/div/div/form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3a3eefb-c77b-4086-98b8-a2d931d9459d",
+      "comment": "",
+      "command": "click",
+      "target": "id=promoForm",
+      "targets": [
+        ["id=promoForm", "id"],
+        ["css=#promoForm", "css:finder"],
+        ["xpath=//div[@id='promoForm']", "xpath:attributes"],
+        ["xpath=//form[@id='shoppingCartPromoForm']/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/div[4]/div/div/form/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f590aa62-87b7-4c4b-af09-9830dfdbc9ca",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.ikea.com/"],
+  "plugins": []
+}

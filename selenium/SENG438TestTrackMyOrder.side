@@ -1,0 +1,249 @@
+{
+  "id": "c75a154a-67f0-4b98-86a0-32173238defb",
+  "version": "2.0",
+  "name": "SENG438",
+  "url": "https://www.ikea.com/ca/en/",
+  "tests": [{
+    "id": "efd92c86-bd5a-4470-9608-425eae94cf56",
+    "name": "IKEATrackMyOrder",
+    "commands": [{
+      "id": "07d56683-1141-4e2f-8a3b-9e591e0a6acb",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d30eef2-31c8-4da6-9193-8456e36a05e3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "736x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3344a2c5-9ade-4651-b015-466f9343a91f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Track my order",
+      "targets": [
+        ["linkText=Track my order", "linkText"],
+        ["css=#lstNavRight > li:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Track my order')]", "xpath:link"],
+        ["xpath=(//a[@name=''])[6]", "xpath:attributes"],
+        ["xpath=//ul[@id='lstNavRight']/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ikea.com/ms/en_CA/customer-service/about-services/getting-it-home/index_track_trace.html?itm_campaign=trackmyorder_desktop_en&itm_element=header_desktop&itm_content=trackmyorder')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Track my order')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68772e89-c11c-490c-86a0-2ba798d80a6e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,23)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53422e14-19d2-4d7c-aa91-db78c93aa01f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,492)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76d5fd6f-3eb5-4834-bad3-3c36690b9e8e",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c897be8-fc85-40d8-a13e-d6086fb1ef31",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "5af8690e-bdaa-4121-b465-08936cc6a29f",
+      "comment": "",
+      "command": "click",
+      "target": "id=Framework1_Centiro.Web.UI.IKEA.ExternalTrackAndTracePage_Centiro.Web.UI.IKEA.ExternalTrackAndTracePage_txSearchOrderNo",
+      "targets": [
+        ["id=Framework1_Centiro.Web.UI.IKEA.ExternalTrackAndTracePage_Centiro.Web.UI.IKEA.ExternalTrackAndTracePage_txSearchOrderNo", "id"],
+        ["name=Framework1$Centiro.Web.UI.IKEA.ExternalTrackAndTracePage$Centiro.Web.UI.IKEA.ExternalTrackAndTracePage_txSearchOrderNo", "name"],
+        ["css=#Framework1_Centiro\\.Web\\.UI\\.IKEA\\.ExternalTrackAndTracePage_Centiro\\.Web\\.UI\\.IKEA\\.ExternalTrackAndTracePage_txSearchOrderNo", "css:finder"],
+        ["xpath=//input[@id='Framework1_Centiro.Web.UI.IKEA.ExternalTrackAndTracePage_Centiro.Web.UI.IKEA.ExternalTrackAndTracePage_txSearchOrderNo']", "xpath:attributes"],
+        ["xpath=//div[@id='UpdatePanel1']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f793b7fe-9239-4e8c-a878-d7d0ed7d1d40",
+      "comment": "",
+      "command": "type",
+      "target": "id=Framework1_Centiro.Web.UI.IKEA.ExternalTrackAndTracePage_Centiro.Web.UI.IKEA.ExternalTrackAndTracePage_txSearchOrderNo",
+      "targets": [
+        ["id=Framework1_Centiro.Web.UI.IKEA.ExternalTrackAndTracePage_Centiro.Web.UI.IKEA.ExternalTrackAndTracePage_txSearchOrderNo", "id"],
+        ["name=Framework1$Centiro.Web.UI.IKEA.ExternalTrackAndTracePage$Centiro.Web.UI.IKEA.ExternalTrackAndTracePage_txSearchOrderNo", "name"],
+        ["css=#Framework1_Centiro\\.Web\\.UI\\.IKEA\\.ExternalTrackAndTracePage_Centiro\\.Web\\.UI\\.IKEA\\.ExternalTrackAndTracePage_txSearchOrderNo", "css:finder"],
+        ["xpath=//input[@id='Framework1_Centiro.Web.UI.IKEA.ExternalTrackAndTracePage_Centiro.Web.UI.IKEA.ExternalTrackAndTracePage_txSearchOrderNo']", "xpath:attributes"],
+        ["xpath=//div[@id='UpdatePanel1']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "seng438"
+    }, {
+      "id": "91bc808b-7a3c-4e4e-8629-450a11b55f09",
+      "comment": "",
+      "command": "click",
+      "target": "css=.softButton",
+      "targets": [
+        ["css=.softButton", "css:finder"],
+        ["xpath=//div[@onclick=\"doAction('SoftButtonClick', 'softButton1');\"]", "xpath:attributes"],
+        ["xpath=//div[@id='UpdatePanel1']/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f53d9bd4-ad3b-4a7b-b038-c2c4db758234",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "327d359e-400e-4bc2-ac40-123b0d16c741",
+      "comment": "",
+      "command": "click",
+      "target": "id=UpdatePanel1",
+      "targets": [
+        ["id=UpdatePanel1", "id"],
+        ["css=#UpdatePanel1", "css:finder"],
+        ["xpath=//div[@id='UpdatePanel1']", "xpath:attributes"],
+        ["xpath=//form[@id='MainFrame']/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d016d92e-dc3b-473a-b30e-ffce7e0c2f8c",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3779494-fc27-4c65-8f38-11c90d9efbe4",
+      "comment": "",
+      "command": "type",
+      "target": "id=Framework1_Centiro.Web.UI.IKEA.ExternalTrackAndTracePage_Centiro.Web.UI.IKEA.ExternalTrackAndTracePage_txSearchOrderNo",
+      "targets": [
+        ["id=Framework1_Centiro.Web.UI.IKEA.ExternalTrackAndTracePage_Centiro.Web.UI.IKEA.ExternalTrackAndTracePage_txSearchOrderNo", "id"],
+        ["name=Framework1$Centiro.Web.UI.IKEA.ExternalTrackAndTracePage$Centiro.Web.UI.IKEA.ExternalTrackAndTracePage_txSearchOrderNo", "name"],
+        ["css=#Framework1_Centiro\\.Web\\.UI\\.IKEA\\.ExternalTrackAndTracePage_Centiro\\.Web\\.UI\\.IKEA\\.ExternalTrackAndTracePage_txSearchOrderNo", "css:finder"],
+        ["xpath=//input[@id='Framework1_Centiro.Web.UI.IKEA.ExternalTrackAndTracePage_Centiro.Web.UI.IKEA.ExternalTrackAndTracePage_txSearchOrderNo']", "xpath:attributes"],
+        ["xpath=//div[@id='UpdatePanel1']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "111111111"
+    }, {
+      "id": "c1b35f7d-12d6-4570-b443-1341925ac8d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.softButton",
+      "targets": [
+        ["css=.softButton", "css:finder"],
+        ["xpath=//div[@onclick=\"doAction('SoftButtonClick', 'softButton1');\"]", "xpath:attributes"],
+        ["xpath=//div[@id='UpdatePanel1']/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88fcea97-609a-4ceb-8d84-f3f9f32b8574",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "97672be9-ebc0-43bb-aa1c-1e57d43a8023",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0c2a969-db37-4567-a072-042cb049541c",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=contingencyOff",
+      "targets": [
+        ["id=contingencyOff", "id"],
+        ["css=#contingencyOff", "css:finder"],
+        ["xpath=//div[@id='contingencyOff']", "xpath:attributes"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": "498,122"
+    }, {
+      "id": "57afa8ac-850b-45be-a142-a844219d160a",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=contingencyOff",
+      "targets": [
+        ["id=contingencyOff", "id"],
+        ["css=#contingencyOff", "css:finder"],
+        ["xpath=//div[@id='contingencyOff']", "xpath:attributes"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": "498,122"
+    }, {
+      "id": "5d733d2c-c7e2-4214-af2e-2d67b4a5473c",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=contingencyOff",
+      "targets": [
+        ["id=contingencyOff", "id"],
+        ["css=#contingencyOff", "css:finder"],
+        ["xpath=//div[@id='contingencyOff']", "xpath:attributes"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": "498,122"
+    }, {
+      "id": "1e4ff593-ecc8-43b2-851b-32bd5b4cb410",
+      "comment": "",
+      "command": "click",
+      "target": "id=contingencyOff",
+      "targets": [
+        ["id=contingencyOff", "id"],
+        ["css=#contingencyOff", "css:finder"],
+        ["xpath=//div[@id='contingencyOff']", "xpath:attributes"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d3f08bf5-c04f-4f85-8787-585f34081c69",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["efd92c86-bd5a-4470-9608-425eae94cf56"]
+  }],
+  "urls": [],
+  "plugins": []
+}
